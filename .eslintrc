@@ -8,7 +8,8 @@
   "rules": {
     "linebreak-style": 0,
     "require-jsdoc": "off",
-    "max-len": "off"
+    "max-len": "off",
+    "indent": ["error", 4]
   },
   "extends": ["eslint:recommended", "google"]
 }
