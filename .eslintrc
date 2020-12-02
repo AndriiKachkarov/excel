@@ -9,7 +9,8 @@
     "linebreak-style": 0,
     "require-jsdoc": "off",
     "max-len": "off",
-    "indent": ["error", 4]
+    "indent": "off",
+    "space-before-function-paren": "off"
   },
   "extends": ["eslint:recommended", "google"]
 }
