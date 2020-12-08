@@ -10,7 +10,10 @@
     "require-jsdoc": "off",
     "max-len": "off",
     "indent": "off",
-    "space-before-function-paren": "off"
+    "space-before-function-paren": "off",
+    "arrow-parens": "off",
+    "comma-dangle": "off",
+    "operator-linebreak": "off"
   },
   "extends": ["eslint:recommended", "google"]
 }
