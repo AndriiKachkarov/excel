@@ -1,4 +1,4 @@
-import {CHANGE_TEXT, CHANGE_STYLES, TABLE_RESIZE, APPLY_STYLE, CHANGE_TITLE} from '@/redux/types';
+import {CHANGE_TEXT, CHANGE_STYLES, TABLE_RESIZE, APPLY_STYLE, CHANGE_TITLE, UPDATE_DATE} from '@/redux/types';
 
 const handlers = {
     [TABLE_RESIZE]: (state, action) => {
@@ -24,6 +24,10 @@ const handlers = {
     },
     [CHANGE_TITLE]: (state, action) => {
         return {...state, title: action.data};
+    },
+    [UPDATE_DATE]: (state) => {
+        const openedDate = new Date().toJSON();
+        return {...state, openedDate};
     },
     DEFAULT: state => state,
 };
